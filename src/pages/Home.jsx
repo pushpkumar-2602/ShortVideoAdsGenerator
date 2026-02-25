@@ -12,7 +12,7 @@ export default function Page() {
     const { theme } = useThemeContext();
     return (
         <>
-            <div className="flex flex-col items-center justify-center text-center px-4 bg-[url('/assets/light-hero-gradient.svg')] dark:bg-[url('/assets/dark-hero-gradient.svg')] bg-no-repeat bg-cover">
+            <div className="flex flex-col items-center justify-center text-center px-4">
                 <div className="flex flex-wrap items-center justify-center gap-3 p-1.5 pr-4 mt-46 rounded-full border border-slate-300 dark:border-slate-600 bg-white/70 dark:bg-slate-600/20">
                     <div className="flex items-center -space-x-3">
                         <img className="size-7 rounded-full" height={50} width={50}

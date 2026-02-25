@@ -12,19 +12,28 @@ import Loading from "./pages/Loading"
 
 export default function App() {
     return (
-        <>
-            <Navbar />
-            <LenisScroll />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/generate" element={<Generate />} />
-                <Route path="/result/:projectId" element={<Result />} />
-                <Route path="/my-generations" element={<MyGenerations />} />
-                <Route path="/community" element={<Community />} />
-                <Route path="/plans" element={<Plans />} />
-                <Route path="/loading" element={<Loading />} />
-            </Routes>
-            <Footer />
-        </>
+       <div className="min-h-screen bg-black 
+                        bg-[url('/assets/light-hero-gradient.svg')] 
+                        dark:bg-[url('/assets/dark-hero-gradient.svg')] 
+                        bg-no-repeat bg-cover">
+
+           
+            
+            
+                <Navbar />
+                <LenisScroll />
+
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/generate" element={<Generate />} />
+                    <Route path="/result/:projectId" element={<Result />} />
+                    <Route path="/my-generations" element={<MyGenerations />} />
+                    <Route path="/community" element={<Community />} />
+                    <Route path="/plans" element={<Plans />} />
+                    <Route path="/loading" element={<Loading />} />
+                </Routes>
+
+                <Footer />
+        </div>
     )
 }
