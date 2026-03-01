@@ -1,111 +1,12 @@
-# Landing - SaaS App Template
+# React + Vite
 
-A clean and flexible landing page for modern SaaS products. Dark theme support. Built with Tailwind CSS, available in Next.js, React and HTML.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-**Live Preview:**
-https://landing.prebuiltui.com/
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## What’s Included
+## Expanding the ESLint configuration
 
-This package contains:
-
-- React Version
-- Structured component architecture
-- Production-ready responsive layouts
-- License file
-
-React version follows best practices and is optimized for production deployment.
-
----
-
-## Core Features
-
-- Light theme
-- Tailwind CSS
-- Hero section
-- Feature showcase
-- Pricing plans
-- Testimonials
-- Responsive layout
-- Modern design
-
----
-
-## Tech Stack
-
-
-### React Version
-
-- React
-- Tailwind CSS
-- Modular component layout
-
-
----
-
-## Installation Guide
-
-
-### React
-
-1. Navigate to the `/reactjs` directory.
-2. Install dependencies:
-
-   npm install
-
-3. Run development server:
-
-   npm run dev
-
-
----
-
-## License
-
-This template is licensed for single-project commercial use.
-
-Your purchase allows you to use Landing in one end product
-intended for one business or client.
-
-You may NOT:
-
-- Resell or redistribute the source files
-- Upload to public repositories
-- Share with other developers or organizations
-- Use to create competing template products
-
-For agency usage, multi-project rights or white-label permissions,
-please contact:
-
-contact@prebuiltui.com
-
-See LICENSE.txt for full legal terms.
-
----
-## Support
-
-Support includes:
-
-- Installation guidance
-- Technical clarification
-- Minor issue resolution
-
-For assistance, contact:
-
-contact@prebuiltui.com
-
-Please include:
-
-- Template name
-- Version used (Next.js / React / HTML)
-- Node version (if applicable)
-- Clear description of the issue
-
----
-
-## © Copyright
-
-Landing © 2026 PrebuiltUI  
-All rights reserved.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
