@@ -1,0 +1,41 @@
+import React from "react";
+
+/* ================= PRIMARY BUTTON ================= */
+
+export const PrimaryButton: React.FC<
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+> = ({ children, className = "", ...props }) => {
+  return (
+    <button
+      className={`inline-flex items-center justify-center gap-2
+      rounded-full px-5 py-2 text-sm font-medium
+      bg-linear-to-br from-indigo-500 to-indigo-600
+      hover:opacity-90 active:scale-95
+      transition-all ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
+
+/* ================= GHOST BUTTON ================= */
+
+export const GhostButton: React.FC<
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+> = ({ children, className = "", ...props }) => {
+  return (
+    <button
+      className={`inline-flex items-center justify-center gap-2
+      rounded-full px-4 py-2 text-sm font-medium
+      border border-white/10
+      bg-white/5 hover:bg-white/10
+      backdrop-blur-sm
+      active:scale-95 transition-all
+      ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
