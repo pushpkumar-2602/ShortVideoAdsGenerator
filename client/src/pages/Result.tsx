@@ -143,8 +143,7 @@ disabled={isGenerating} className='w-full'>
 <><SparkleIcon className='size-4'/>Generate Video</>
 
 )}
-<SparkleIcon className='size-4'/>
-Generate Video</PrimaryButton>
+</PrimaryButton>
 ): (
 <div className="p-3 bg-green-500/10 border border-green-500/20
 rounded-xl text-green-400 text-center text-sm font-medium">

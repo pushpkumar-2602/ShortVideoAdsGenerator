@@ -82,16 +82,20 @@ User intent: ${userPrompt}
 `;
 
     const sdResponse = await axios.post(
-      "http://127.0.0.1:7860/sdapi/v1/txt2img",
-      {
-        prompt,
-        steps: 20,
-        width: 768,
-        height: 1024,
-        cfg_scale: 7,
-      },
-      { timeout: 120000 }
-    );
+  "http://127.0.0.1:7860/sdapi/v1/txt2img",
+  {
+    prompt,
+    steps: 12,
+    width: 512,
+    height: 768,
+    cfg_scale: 7,
+    sampler_name: "Euler a",
+    override_settings: {
+      sd_model_checkpoint: "v1-5-pruned-emaonly-fp16.safetensors"
+    }
+  },
+  { timeout: 300000 }
+);
 
     const base64Image = sdResponse.data.images?.[0];
 
